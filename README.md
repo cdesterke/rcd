@@ -9,6 +9,7 @@ library(devtools)
 install_github("cdesterke/rcd")
 ```
 
+## Over representation analysis
 
 ```r
 library(rcd)
@@ -17,7 +18,6 @@ custom<-c("CALR","KLRK1","HMGB1","HSPA1A","HSPA1B","HSPA1L","FLNA","FLNB","MYH9"
 res<-over(custom,rcd)
 res
 ```
-## Over representation analysis
 
 ![res](https://github.com/cdesterke/rcd/blob/main/over.png)
 
