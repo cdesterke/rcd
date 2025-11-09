@@ -20,6 +20,15 @@ library(rcd)
 
 
 
+```r
+library(rcd)
+
+```
+
+
+
+![res](https://github.com/cdesterke/rcd/blob/main/scatter.png)
+
 
 ![res](https://github.com/cdesterke/rcd/blob/main/heatmap.png)
 
