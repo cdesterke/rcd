@@ -14,7 +14,7 @@ install_github("cdesterke/rcd")
 library(rcd)
 
 ```
-
+## Over representation analysis
 
 ![res](https://github.com/cdesterke/rcd/blob/main/over.png)
 
@@ -29,6 +29,10 @@ library(rcd)
 
 ![res](https://github.com/cdesterke/rcd/blob/main/scatter.png)
 
+
+## Single sample gene set enrichment analysis
+
+![res](https://github.com/cdesterke/rcd/blob/main/ssres.png)
 
 ![res](https://github.com/cdesterke/rcd/blob/main/heatmap.png)
 
