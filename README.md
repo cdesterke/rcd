@@ -12,7 +12,10 @@ install_github("cdesterke/rcd")
 
 ```r
 library(rcd)
-
+load(rcd)
+custom<-c("CALR","KLRK1","HMGB1","HSPA1A","HSPA1B","HSPA1L","FLNA","FLNB","MYH9","TLN1","ACTB","MYL6","MYH10")
+res<-over(custom,rcd)
+res
 ```
 ## Over representation analysis
 
@@ -21,7 +24,7 @@ library(rcd)
 
 
 ```r
-library(rcd)
+plotscatter(res,x_min=-30,x_max=70,y_min=0,y_max=10,label=5,base=18)
 
 ```
 
@@ -32,12 +35,29 @@ library(rcd)
 
 ## Single sample gene set enrichment analysis
 
+```r
+data(matrix)
+data(rcd)
+ssres<-rcdscore(expr,rcd,method="zscore")
+```
+
+
+
+
 ![res](https://github.com/cdesterke/rcd/blob/main/ssres.png)
+
+```r
+rcdheat(ssres,phenotype,scale="none",fontsize=10)
+```
+
 
 ![res](https://github.com/cdesterke/rcd/blob/main/heatmap.png)
 
 
 
+```r
+rcdpca(ssres,phenotype,group="condition",scale=TRUE,fontsize=16)
+```
 
 ![res](https://github.com/cdesterke/rcd/blob/main/pca.png)
 
