@@ -13,7 +13,7 @@ install_github("cdesterke/rcd")
 
 ```r
 library(rcd)
-load(rcd)
+data(rcd)
 custom<-c("CALR","KLRK1","HMGB1","HSPA1A","HSPA1B","HSPA1L","FLNA","FLNB","MYH9","TLN1","ACTB","MYL6","MYH10")
 res<-over(custom,rcd)
 res
